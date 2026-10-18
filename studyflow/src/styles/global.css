@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* ========================================
+   GLOBAL THEME VARIABLES
+======================================== */
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+
+  --color-primary: #65856f;
+  --color-primary-dark: #4f6f59;
+  --color-primary-light: #e7eee7;
+  --color-primary-soft: #f0f4ef;
+
+  --color-background: #f6f7f3;
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f9faf7;
+  --color-sidebar: #ffffff;
+
+  --color-text: #26352c;
+  --color-text-secondary: #68766c;
+  --color-text-muted: #9aa49b;
+
+  --color-border: #e7ebe4;
+  --color-border-strong: #dce3da;
+
+  --color-success: #5f9572;
+  --color-warning: #d9a354;
+  --color-danger: #cf7770;
+  --color-info: #7899b7;
+
+  --color-shadow: rgba(42, 60, 46, 0.05);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  --transition: 0.2s ease;
+}
+
+/* ========================================
+   DARK THEME
+======================================== */
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Neutral, near-black surfaces; keep green as an accent only. */
+  --color-primary: #86b995;
+  --color-primary-dark: #a0d0ad;
+  --color-primary-light: #24272a;
+  --color-primary-soft: #151719;
+
+  --color-background: #090a0b;
+  --color-surface: #111315;
+  --color-surface-secondary: #191b1e;
+  --color-sidebar: #0c0d0f;
+
+  --color-text: #f5f7f6;
+  --color-text-secondary: #c0c5c2;
+  --color-text-muted: #858b88;
+
+  --color-border: #282b2e;
+  --color-border-strong: #393d41;
+
+  --color-success: #86c99a;
+  --color-warning: #f0bd63;
+  --color-danger: #f08b83;
+  --color-info: #8bbcf0;
+
+  --color-shadow: rgba(0, 0, 0, 0.28);
+}
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.6;
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: 'DM Sans', sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font-size: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  line-height: 1.3;
+}
+
+p {
+  margin-top: 0;
+}
+
+::selection {
+  background: var(--color-primary-light);
+  color: var(--color-text);
+}
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-strong) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 10px;
+}
+
+/* ========================================
+   COMMON UTILITIES
+======================================== */
+
+.muted {
+  color: var(--color-text-secondary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.full-width {
+  width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    color var(--transition);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ========================================
+   RESPONSIVE BASE
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

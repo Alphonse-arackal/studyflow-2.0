@@ -1,0 +1,122 @@
+{
+  "tasks": [
+    {
+      "title": "complete revison",
+      "date": "2026-10-18",
+      "completed": false,
+      "id": "giYtV90xBhw"
+    },
+    {
+      "title": "FINISH PROJECT",
+      "date": "2026-10-19",
+      "completed": false,
+      "id": "VyNYgzUphQ8"
+    }
+  ],
+  "commonTasks": [
+    {
+      "title": "complete tasks",
+      "completedDates": [],
+      "id": "SAP0kFYLnjA"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "8IX5Q_JtJZ4",
+      "name": "Java"
+    },
+    {
+      "id": "HNmLNlxkckE",
+      "name": "Python"
+    },
+    {
+      "id": "e1xT4mq2fUk",
+      "name": "Computer Networks"
+    },
+    {
+      "id": "Fbkqe1UcutE",
+      "name": "DBMS"
+    },
+    {
+      "id": "Js-qF5HSbsA",
+      "name": "Computer Science"
+    },
+    {
+      "id": "6kvKmEFjmSQ",
+      "name": "Java"
+    },
+    {
+      "id": "087NTSlJtXs",
+      "name": "Python"
+    },
+    {
+      "id": "4pHcMyGpcNQ",
+      "name": "Computer Networks"
+    },
+    {
+      "id": "5h30zEx5iFI",
+      "name": "DBMS"
+    },
+    {
+      "id": "axuBmizfMVU",
+      "name": "Computer Science"
+    }
+  ],
+  "notes": [
+    {
+      "subjectId": "8IX5Q_JtJZ4",
+      "title": "java",
+      "content": "java is a programing languag\n",
+      "updatedAt": "2026-10-18T18:18:59.147Z",
+      "id": "oeVDTNBrPgQ"
+    }
+  ],
+  "flashcards": [
+    {
+      "subjectId": "8IX5Q_JtJZ4",
+      "question": "what is java",
+      "answer": "java is a programming lang",
+      "createdAt": "2026-10-18T18:28:14.214Z",
+      "reviewStatus": "known",
+      "id": "v7mYJAIxMAU"
+    },
+    {
+      "subjectId": "8IX5Q_JtJZ4",
+      "question": "java",
+      "answer": "JAVA",
+      "createdAt": "2026-10-18T18:31:33.473Z",
+      "reviewStatus": "",
+      "id": "_nuH6Oe2zK8"
+    },
+    {
+      "subjectId": "HNmLNlxkckE",
+      "question": "PYTHON",
+      "answer": "PYTHON PROGRAMIING LANGUAGE",
+      "createdAt": "2026-10-18T18:31:57.410Z",
+      "reviewStatus": "unsure",
+      "id": "mfu5GzvgN4Y"
+    }
+  ],
+  "mockTests": [],
+  "events": [
+    {
+      "title": "REDUX EXAM",
+      "date": "2026-10-19",
+      "type": "Exam",
+      "description": "",
+      "location": "",
+      "id": "W1UJbWWBIgY"
+    }
+  ],
+  "timetableBlocks": [
+    {
+      "title": "REDUX EXAM",
+      "date": "2026-10-19",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "type": "Study",
+      "id": "yQxQswTYgVk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
