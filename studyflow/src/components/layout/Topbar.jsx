@@ -5,7 +5,7 @@ import ThemeToggle from '../common/ThemeToggle'
 import { tasksAPI, commonTasksAPI, notesAPI, eventsAPI, flashcardsAPI, mockTestsAPI } from '../../services/api'
 
 const pageTitles = {
-  '/': { title: 'Dashboard', subtitle: 'Your personal learning space.' },
+  '/dashboard': { title: 'Dashboard', subtitle: 'Your personal learning space.' },
   '/tasks': { title: 'My Tasks', subtitle: 'Plan your work and stay on track.' },
   '/notes': { title: 'My Notes', subtitle: 'Organize your knowledge in one place.' },
   '/revision': { title: 'Revision', subtitle: 'Review, practice, and remember more.' },

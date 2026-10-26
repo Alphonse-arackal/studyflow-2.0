@@ -18,7 +18,7 @@ function NotFound() {
           Let's get you back to your study space.
         </p>
 
-        <Link to="/" className="primary-button">
+        <Link to="/dashboard" className="primary-button">
           <FiArrowLeft size={17} />
           Back to dashboard
         </Link>

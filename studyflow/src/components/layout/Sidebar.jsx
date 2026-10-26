@@ -13,7 +13,7 @@ const navigation = [
   {
     title: 'Workspace',
     items: [
-      { name: 'Dashboard', path: '/', icon: FiGrid },
+      { name: 'Dashboard', path: '/dashboard', icon: FiGrid },
       { name: 'Tasks', path: '/tasks', icon: FiCheckSquare },
       { name: 'Notes', path: '/notes', icon: FiBookOpen },
       { name: 'Revision', path: '/revision', icon: FiLayers },

@@ -1,12 +1,12 @@
-// ========================================
+
 // STUDYFLOW API SERVICE
-// ========================================
+
 
 const API_BASE_URL = 'https://studyflow-2-0-jojd.onrender.com'
 
-// ========================================
+
 // GENERIC API HELPERS
-// ========================================
+
 
 async function request(endpoint, options = {}) {
   const response = await fetch(`${API_BASE_URL}${endpoint}`, {
@@ -64,9 +64,9 @@ function deleteItem(endpoint, id) {
   })
 }
 
-// ========================================
+
 // TASKS API
-// ========================================
+
 
 export const tasksAPI = {
   getAll: () => getAll('/tasks'),
@@ -76,9 +76,9 @@ export const tasksAPI = {
   delete: (id) => deleteItem('/tasks', id),
 }
 
-// ========================================
+
 // COMMON TASKS API
-// ========================================
+
 
 export const commonTasksAPI = {
   getAll: () => getAll('/commonTasks'),
@@ -88,9 +88,8 @@ export const commonTasksAPI = {
   delete: (id) => deleteItem('/commonTasks', id),
 }
 
-// ========================================
+
 // SUBJECTS API
-// ========================================
 
 export const subjectsAPI = {
   getAll: () => getAll('/subjects'),
@@ -100,9 +99,9 @@ export const subjectsAPI = {
   delete: (id) => deleteItem('/subjects', id),
 }
 
-// ========================================
+
 // NOTES API
-// ========================================
+
 
 export const notesAPI = {
   getAll: () => getAll('/notes'),
@@ -112,9 +111,9 @@ export const notesAPI = {
   delete: (id) => deleteItem('/notes', id),
 }
 
-// ========================================
+
 // FLASHCARDS API
-// ========================================
+
 
 export const flashcardsAPI = {
   getAll: () => getAll('/flashcards'),
@@ -124,9 +123,8 @@ export const flashcardsAPI = {
   delete: (id) => deleteItem('/flashcards', id),
 }
 
-// ========================================
+
 // MOCK TESTS API
-// ========================================
 
 export const mockTestsAPI = {
   getAll: () => getAll('/mockTests'),
@@ -136,9 +134,9 @@ export const mockTestsAPI = {
   delete: (id) => deleteItem('/mockTests', id),
 }
 
-// ========================================
+
 // CALENDAR EVENTS API
-// ========================================
+
 
 export const eventsAPI = {
   getAll: () => getAll('/events'),
@@ -148,9 +146,9 @@ export const eventsAPI = {
   delete: (id) => deleteItem('/events', id),
 }
 
-// ========================================
+
 // TIMETABLE API
-// ========================================
+
 
 export const timetableAPI = {
   getAll: () => getAll('/timetableBlocks'),
